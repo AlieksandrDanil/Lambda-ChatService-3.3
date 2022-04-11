@@ -1,8 +1,7 @@
 data class Message(
-    var messageId: Int,
+    var messageId: Int = 0,
     val chatId: Int,
-//    val senderUserId: Int,
-//    val receiverUserId: Int,
+    val addressee: String = "",
     val text: String,
-    val unreadMessage: Boolean = true
+    var isRead: Boolean = false
 )
